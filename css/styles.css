@@ -1,0 +1,503 @@
+@import url(reset.css);
+@font-face{
+    font-family: 'bebasRegular';
+    src: url('../fonts/BEBAS___-webfont.eot');
+    src: url('../fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BEBAS___-webfont.woff') format('woff'),
+    url('../fonts/BEBAS___-webfont.ttf') format('truetype'),
+    url('../fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'stMarieThinthin';
+    src: url('../fonts/StMarie-Thin-webfont.eot');
+    src: url('../fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/StMarie-Thin-webfont.woff') format('woff'),
+    url('../fonts/StMarie-Thin-webfont.ttf') format('truetype'),
+    url('../fonts/StMarie-Thin-webfont.svg#stMarieThinthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    list-style-type:none;
+    font-family: Calibri;
+}
+
+body {
+    max-width: 100%;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Styles */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 4px solid #fb9c06;
+}
+
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo-container {
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.logo-container .line {
+    text-transform: uppercase;
+    color: #6e6d6b;
+    font-family: bebasRegular, Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.logo-container .label {
+    float: right;
+    margin-top: 7px;
+    margin-left: 51px;
+    text-align: center;
+    color: #fb9c06;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 47px;
+}
+
+header nav{
+    float: right;
+    margin: 75px 2px 25px 6px;
+}
+
+header nav h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+
+header nav li{
+    float: left;
+    display: block;
+}
+
+header nav li a{
+    display: block;
+    font: 400 23px Calibri;
+    color: #9e9b9b;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header nav li a:hover{
+    color: #fb9c06;
+}
+
+header nav > ul > li.contact{
+    margin-left: 84px;
+}
+
+header nav > ul > li.blog{
+    margin-left: 77px;
+}
+
+header nav > ul > li.work{
+    margin-left: 69px;
+}
+
+header nav > ul > li.about{
+    margin-left: 70px;
+}
+
+header nav li a:before{
+    background: url(../images/spritesheet.png) no-repeat;
+    content: '';
+    width: 54px;
+    height: 47px;
+    position: absolute;
+}
+
+header nav > ul > li.home a:before{
+    background-position: -78px -71px;
+    bottom: 37px;
+}
+
+header nav > ul > li.about a:before{
+    background-position: -23px -9px;
+    bottom: 34px;
+    left: 19px;
+}
+
+header nav > ul > li.work a:before{
+    background-position: -153px -10px;
+    bottom: 33px;
+    left: -4px;
+}
+
+header nav > ul > li.blog a:before{
+    background-position: -86px -12px;
+    bottom: 30px;
+    left: 2px;
+}
+
+header nav > ul > li.contact a:before{
+    background-position: -11px -77px;
+    bottom: 24px;
+    left: 12px;
+}
+
+/* Main Styles */
+main {
+    
+padding-top: 128px;
+    
+min-height: calc(100vh - 124px);
+}
+
+.banner-container {
+    background: url(../images/orange_bg.jpg) no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid  #fb9c06;
+    border-top: 4px solid  #fb9c06;
+}
+
+.tagline{
+    margin-top: 10.8%;
+    margin-left: 1%;
+    margin-bottom: 6.2%
+}
+
+.tagline h3{
+    font: 37px 'bebasregular';
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 27px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.tagline h3:first-child{
+    background-color: rgba(0, 0, 0, 0.69);
+    line-height: 26.158px;
+    color: #fb9c06;
+    padding: 26px 13px 14px 30px;
+    margin-left: 10px;
+    letter-spacing: 0.7px;
+    word-spacing: -1.0px;
+}
+
+.tagline h3:last-child{
+    background-color: rgba(255, 175, 18, 0.7);
+    line-height: 26.158px;
+    color: #6e6d6b;
+    padding: 30px 16px 20px 33px;
+    letter-spacing: 0.6px;
+    word-spacing: 0;
+}
+
+.articles-container{
+    padding: 20px 0 28px;
+    background-size: 10px 4px;
+    background-repeat: repeat-x;
+    background-position: -3px 101%;
+    background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #ffffff 100%);
+}
+
+.articles-container ul li{
+    float: left;
+    width: 25%;
+    padding: 8px 0 0 20px;
+}
+
+.articles-container ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.articles-container ul li p{
+    padding: 0 3px;
+    line-height: 23.60px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.articles-container ul li a{
+    float: right;
+    color: #ffac00;
+    font: italic 300 17px / 23.16px Calibri;
+    margin-right: 20px;
+    margin-top: -1px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.articles-container ul li a:hover{
+    color: #9e9b9b;
+}
+
+
+
+main > div > section.team-info-container{
+    padding: 41px 0 0 0;
+}
+
+main > div > section.team-info-container div{
+    text-align: center;
+}
+
+main > div > section.team-info-container h2{
+    display: inline;
+    font: 100 40px 'stMarieThinthin', serif;
+    color: #ff9c00;
+    margin: 0 0 0 26px;
+    letter-spacing: 1px;
+    line-height: 0;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    background-position: 0 95%;
+    background-image: -webkit-linear-gradient(left, #FF9C00 0%, #FF9C00 50%, #FF9C00 51%, #FF9C00 100%);
+}
+
+main > div > section.team-info-container ul{
+    margin-top: 32px;
+}
+
+main > div > section.team-info-container ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main > div > section.team-info-container ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+main > div > section.team-info-container ul li h4{
+    font: 300 22px / 23.16px Calibri;
+    color: #6e6d6b;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    word-spacing: 1.7px;
+}
+
+main > div > section.team-info-container ul li span{
+    color: #fb9c06;
+}
+
+main > div > section.team-info-container img{
+    border: 10px solid #fb9c06;
+    border-radius: 50%;
+}
+
+main > div > section.team-info-container ul li p{
+    width: 67%;
+    display: inline-block;
+    text-align: left;
+    font: 300 15px / 23.16px Calibri;
+    letter-spacing: 0.31px;
+    word-spacing: 0.2px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+1){
+    margin: 12px 0 0;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+1) h4{
+    margin-right: 95px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+1) img{
+    margin: 29px 86px -1px -8px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+1) p{
+    margin: 18px 70px 0 7px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+2) {
+    margin: 13px 0 0;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+2) h4{
+    margin-left: 11px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+2) img{
+    margin: 27px 0 0 36px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+2) p{
+    margin: 15px 10px 0 83px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+3){
+    margin: 11px 0 0;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+3) h4{
+    margin-left: 123px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+3) img{
+    margin: 30px 0 0 97px;
+}
+
+main > div > section.team-info-container > ul > li:nth-child(3n+3) p{
+    margin: 13px 10px 0 134px;
+}
+
+.form-container {
+
+}
+
+.message_box{
+    text-align: center;
+    margin-top: 42px;
+}
+
+.message_box h2{
+    display: inline;
+    font: 100 40px 'stMarieThinthin', serif;
+    color: #ff9c00;
+    margin-left: 39px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    background-position: 0 95%;
+    background-image: -webkit-linear-gradient(left, #FF9C00 0%, #FF9C00 50%, #FF9C00 51%, #FF9C00 100%);
+}
+
+form{
+    margin-top: 69px;
+}
+
+form div{
+    margin-top: 45px;
+}
+
+form label{
+    font: 400 24px / 23.16px 'stMarieThinthin', serif;
+    color: #fb9c06;
+    margin-top: 10px;
+    width: 10%;
+    cursor: auto;
+}
+
+form input, form textarea{
+    max-width: 89%;
+    width: 89%;
+    float: right;
+    height: 34px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+
+    -webkit-box-shadow: inset 4px 2px 0 0 rgba(206,205,203,1);
+    box-shadow: inset 4px 2px 0 0 rgba(206,205,203,1);
+}
+
+form textarea{
+    height: 91px;
+    padding: 10px 10px;
+    resize: none;
+}
+
+.btn{
+    height: 80px;
+}
+
+input.btn_submit{
+    position: relative;
+    float: right;
+    display: block;
+    padding: 0 2px 5px 0;
+    letter-spacing: 1px;
+    background-color: #fb9c06;
+    font: 100 30px / 23.16px 'stMarieThinthin', serif;
+    margin: 25px 30px 20px 0;
+    color: #ffffff;
+    border-bottom: 3px solid #cc830f;
+    cursor: pointer;
+    height: 47px;
+    width: 176px;
+    clear: both;
+}
+
+input.btn_submit:active{
+    top: 3px;
+    border-bottom: none;
+}
+
+.message_box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.invalid {
+    
+border-color: #eda1a1;
+}
+
+.danger {
+
+color: #ff8888;
+
+float: right;
+}
+
+/* Footer Styles*/
+
+footer{
+    background-color: #fb9c06;
+    height: auto;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 66px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #cc830f;
+    padding: 5px 0 18px 7px;
+}
+
+footer h2{
+    margin-left: 9px;
+    font: 100 33px 'stMarieThinthin', serif;
+    word-spacing: 3px;
+    letter-spacing: 0.3px;
+    margin-top: 5px;
+}

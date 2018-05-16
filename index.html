@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orange Rabbit</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="wrapper">
+
+        <div class="logo-container">
+            <a href="/index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="label">orange<br/><span class="line">Rabbit</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="home"><a href="#">home</a></li>
+                <li class="about"><a href="#">about</a></li>
+                <li class="work"><a href="#">work</a></li>
+                <li class="blog"><a href="#">blog</a></li>
+                <li class="contact"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+    <section class="banner-container">
+        <div class="wrapper">
+
+            <div class="tagline">
+                <h3>Do you like rabbits?</h3>
+                <div class="clearfix"></div>
+                <h3>Do you like oranges?</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="articles-container">
+        <div class="wrapper">
+
+            <ul>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#">read more...</a>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#">read more...</a>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#">read more...</a>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#">read more...</a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <section class="team-info-container">
+
+            <div>
+                <h2>Meet the team</h2>
+            </div>
+            <ul>
+                <li><h4>Hoof <span>- Lead Designer</span></h4>
+                    <figure>
+                        <img src="images/horse.jpg" alt="horse photo">
+                        <figcaption>
+                            <p>Hoof is our most talanted designer. However he`s not the talkative type and I would
+                                advise not
+                                getting on the wrong side of him.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li><h4>Nibs <span>- CEO/Director</span></h4>
+                    <figure>
+                        <img src="images/rabbit.jpg" alt="rabbit photo">
+                        <figcaption>
+                            <p>Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she
+                                has
+                                too.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li><h4>Squawk <span>- Developer</span></h4>
+                    <figure>
+                        <img src="images/ostrich.jpg" alt="ostrich photo">
+                        <figcaption>
+                            <p>Squawk is no social bunny. But when it comes to programming he stands out from the
+                                crowd.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="form-container">
+            <div class="message_box">
+                <h2>Send us a message...</h2>
+            </div>
+            <form id="contact-form" action="javascript:alert('SUCCESS!!!')" method="post">
+                <div class="form-group">
+                    <label for="form_name">Name:</label>
+                    <input type="text" name="form_name" id="form_name" minlength="2" required>
+                    <span id="form_name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="form_email">Email:</label>
+                    <input type="email" name="form_email" id="form_email" minlength="3" required>
+                    <span id="form_email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="form_msg_text">Message:</label>
+                    <textarea name="form_msg_text" id="form_msg_text" required></textarea>
+                    <span id="form_msg_text-error"></span>
+                </div>
+                <div class="clear"></div>
+
+                <div class="btn">
+                    <input type="submit" id="form_submit" class="btn_submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="wrapper">
+
+        <h2>COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.</h2>
+
+    </div>
+</footer>
+
+<script async src="js/validation.js"></script>
+</body>
+</html>
+</html>
